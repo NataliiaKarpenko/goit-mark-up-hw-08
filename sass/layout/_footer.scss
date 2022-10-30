@@ -1,0 +1,35 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-grey-bgc);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__contacts {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+
+.footer__networks {
+  margin-right: 93px;
+}
+
+.footer__form {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 12px;
+  width: 570px;
+}
+
+.footer__label {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  @include font(14px, 1.14, 0.03em);
+  color: var(--white-bgc);
+  text-transform: uppercase;
+}

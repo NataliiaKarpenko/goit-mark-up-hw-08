@@ -1,0 +1,29 @@
+.correspondence {
+  font-style: normal;
+}
+
+.correspondence__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.correspondence__link {
+  @include font(14px, 1.71, 0.03em);
+  font-weight: 400;
+
+  transition: color var(--transition-dur-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.correspondence__link_light {
+  color: var(--white-bgc);
+}
+
+.correspondence__link_dark {
+  color: rgba(255, 255, 255, 0.6);
+}
