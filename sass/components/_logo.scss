@@ -3,8 +3,12 @@
 
   font-family: var(--logo-font-family);
   font-weight: 700;
-  @include font(26px, 1.19, 0.03em);
+  @include font(24px, 1.17, 0.03em);
   color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 1.19, 0.03em);
+  }
 }
 
 .nav__logo {

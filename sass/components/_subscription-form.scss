@@ -1,7 +1,12 @@
 .subscription {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 
 .subscription__label {
@@ -16,6 +21,8 @@
 .subscription__input {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
 
@@ -29,6 +36,11 @@
   border-radius: 4px;
 
   transition: border-color var(--transition-dur-func);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+  }
 
   &:focus {
     cursor: pointer;

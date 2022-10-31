@@ -1,10 +1,7 @@
 .networks {
   display: flex;
-  column-gap: 10px;
-}
-
-.networks_centered {
   justify-content: center;
+  column-gap: 10px;
 }
 
 .networks__item {

@@ -1,5 +1,6 @@
 .submit-btn {
   @extend %centered;
+  
   min-width: 200px;
   min-height: 50px;
 
@@ -17,6 +18,11 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+
+  @media screen and (max-width: 1199px) {
+ margin-left: auto;
+ margin-right: auto;
   }
 }
 
