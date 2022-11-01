@@ -8,7 +8,7 @@
 }
 
 .benefits__item {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
 
@@ -29,7 +29,7 @@
   height: 120px;
 
   background-color: var(--light-grey-bgc);
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 
 .benefits__title {
