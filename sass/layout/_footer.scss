@@ -2,66 +2,66 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-grey-bgc);
-}
 
-.footer__container {
-  @media screen and (max-width: 1199px) {
-    text-align: center;
+  &__container {
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-  }
-}
+  &__box {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 76px;
+      padding-right: 89px;
+    }
 
-.footer__box {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-left: 76px;
-    padding-right: 89px;
-  }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
 
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-grow: 1;
-    margin-right: 93px;
-  }
-}
-
-.footer__contacts {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      flex-grow: 1;
+      margin-right: 93px;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
+  &__contacts {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
   }
-}
 
-.footer__form {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: flex-end;
-    column-gap: 12px;
+  &__form {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: flex-end;
+      column-gap: 12px;
 
-    width: 570px;
+      width: 570px;
+    }
   }
-}
 
-.footer__label {
-  margin-bottom: 20px;
+  &__label {
+    margin-bottom: 20px;
 
-  font-weight: 700;
-  @include font(14px, 1.14, 0.03em);
-  color: var(--white-bgc);
-  text-transform: uppercase;
+    font-weight: 700;
+    @include font(14px, 1.14, 0.03em);
+    color: var(--white-bgc);
+    text-transform: uppercase;
+  }
 }

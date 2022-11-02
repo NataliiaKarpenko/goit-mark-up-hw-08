@@ -1,9 +1,7 @@
 .correspondence {
   font-style: normal;
-}
 
-.correspondence__item {
-  &:not(:last-child) {
+  &__item:not(:last-child) {
     margin-bottom: 8px;
 
     @media screen and (min-width: 1200px) {
@@ -11,7 +9,7 @@
     }
   }
 
-  .correspondence__link {
+  &__link {
     @include font(14px, 1.71, 0.03em);
     font-weight: 400;
 
@@ -23,11 +21,11 @@
     }
   }
 
-  .correspondence__link_light {
+  &__link_light {
     color: var(--white-bgc);
   }
 
-  .correspondence__link_dark {
+  &__link_dark {
     color: rgba(255, 255, 255, 0.6);
   }
 }

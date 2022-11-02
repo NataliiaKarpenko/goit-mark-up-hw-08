@@ -20,40 +20,64 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a href="./index.html" class="logo nav__logo"
-            >Web<span class="logo__final-dark">Studio</span></a
-          >
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./" class="nav__link">Студія</a>
+        <a href="./index.html" class="logo"
+          >Web<span class="logo__final-dark">Studio</span></a
+        >
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="перемикач мобільного меню">
+            <use href="./images/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
+        <div class="menu">
+          <nav>
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="./" class="nav__link nav__link_active">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a href="./#address-box" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link"
+                ><svg
+                  class="contacts__icon"
+                  width="16"
+                  height="12"
+                  area-label="конверт"
+                >
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link_active">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a href="./#address-box" class="nav__link">Контакти</a>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link"
+                ><svg
+                  class="contacts__icon"
+                  width="10"
+                  height="16"
+                  area-label="телефон"
+                >
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contacts__link"
-              ><svg class="contacts__icon" width="16" height="12" area-label="конверт">
-                <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contacts__link"
-              ><svg class="contacts__icon" width="10" height="16" area-label="телефон">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -90,9 +114,9 @@
                     width="370"
                   />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
@@ -110,9 +134,9 @@
                     width="370"
                   />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
@@ -132,13 +156,15 @@
                     width="370"
                   />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
-                  <h2 class="project__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <h2 class="project__title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
                   <p class="project__description">Додаток</p>
                 </div>
               </a>
@@ -146,15 +172,21 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/projects/img-7.jpg" alt="зображення навушників" width="370" />
+                  <img
+                    src="./images/projects/img-7.jpg"
+                    alt="зображення навушників"
+                    width="370"
+                  />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
-                  <h2 class="project__title">Проєкт <span lang="en">Prime</span></h2>
+                  <h2 class="project__title">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
                   <p class="project__description">Маркетинг</p>
                 </div>
               </a>
@@ -168,13 +200,15 @@
                     width="370"
                   />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
-                  <h2 class="project__title">Проєкт <span lang="en">Boxes</span></h2>
+                  <h2 class="project__title">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
                   <p class="project__description">Додаток</p>
                 </div>
               </a>
@@ -188,13 +222,15 @@
                     width="370"
                   />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
-                  <h2 lang="en" class="project__title">Inspiration has no Borders</h2>
+                  <h2 lang="en" class="project__title">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="project__description">Веб-сайт</p>
                 </div>
               </a>
@@ -208,13 +244,15 @@
                     width="370"
                   />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
-                  <h2 class="project__title">Видання <span lang="en">Limited Edition></span></h2>
+                  <h2 class="project__title">
+                    Видання <span lang="en">Limited Edition></span>
+                  </h2>
                   <p class="project__description">Дизайн</p>
                 </div>
               </a>
@@ -228,13 +266,15 @@
                     width="370"
                   />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
-                  <h2 class="project__title">Проєкт <span lang="en">LAB</span></h2>
+                  <h2 class="project__title">
+                    Проєкт <span lang="en">LAB</span>
+                  </h2>
                   <p class="project__description">Маркетинг</p>
                 </div>
               </a>
@@ -248,9 +288,9 @@
                     width="370"
                   />
                   <div class="project__overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </div>
                 </div>
                 <div class="project__box">
@@ -266,77 +306,101 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__contacts">
-          <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo__final-light">Studio</span></a
-          >
-          <address id="address-box">
-            <ul class="correspondence">
-              <li class="correspondence__item">
-                <a
-                  href="http://surl.li/dbvrt"
-                  class="correspondence__link correspondence__link_light"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__box">
+          <div class="footer__contacts">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo__final-light">Studio</span></a
+            >
+            <address id="address-box">
+              <ul class="correspondence">
+                <li class="correspondence__item">
+                  <a
+                    href="http://surl.li/dbvrt"
+                    class="correspondence__link correspondence__link_light"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="correspondence__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="correspondence__link correspondence__link_dark"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="correspondence__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="correspondence__link correspondence__link_dark"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__networks">
+            <p class="footer__label">Приєднуйтесь</p>
+            <ul class="networks">
+              <li class="networks__item">
+                <a href="" class="networks__link networks__link_dark"
+                  ><svg
+                    class="networks__icon"
+                    width="20"
+                    height="20"
+                    lang="en"
+                    area-label="instagram"
+                  >
+                    <use href="./images/sprite.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="correspondence__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="correspondence__link correspondence__link_dark"
-                  >info@devstudio.com</a
-                >
+              <li class="networks__item">
+                <a href="" class="networks__link networks__link_dark"
+                  ><svg
+                    class="networks__icon"
+                    width="20"
+                    height="20"
+                    lang="en"
+                    area-label="twitter"
+                  >
+                    <use href="./images/sprite.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="correspondence__item">
-                <a href="tel:+380961111111" class="correspondence__link correspondence__link_dark"
-                  >+38 096 111 11 11</a
-                >
+              <li class="networks__item">
+                <a href="" class="networks__link networks__link_dark"
+                  ><svg
+                    class="networks__icon"
+                    width="20"
+                    height="20"
+                    lang="en"
+                    area-label="facebook"
+                  >
+                    <use href="./images/sprite.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks__item">
+                <a href="" class="networks__link networks__link_dark"
+                  ><svg
+                    class="networks__icon"
+                    width="20"
+                    height="20"
+                    lang="en"
+                    area-label="linkedin"
+                  >
+                    <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__networks">
-          <p class="footer__label">Приєднуйтесь</p>
-          <ul class="networks">
-            <li class="networks__item">
-              <a href="" class="networks__link networks__link_dark"
-                ><svg
-                  class="networks__icon"
-                  width="20"
-                  height="20"
-                  lang="en"
-                  area-label="instagram"
-                >
-                  <use href="./images/sprite.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="networks__item">
-              <a href="" class="networks__link networks__link_dark"
-                ><svg class="networks__icon" width="20" height="20" lang="en" area-label="twitter">
-                  <use href="./images/sprite.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="networks__item">
-              <a href="" class="networks__link networks__link_dark"
-                ><svg class="networks__icon" width="20" height="20" lang="en" area-label="facebook">
-                  <use href="./images/sprite.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="networks__item">
-              <a href="" class="networks__link networks__link_dark"
-                ><svg class="networks__icon" width="20" height="20" lang="en" area-label="linkedin">
-                  <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="footer__form">
           <div class="subscription">
-            <label for="email" class="subscription__label">Підпишіться на розсилку</label>
+            <label for="email" class="footer__label"
+              >Підпишіться на розсилку</label
+            >
             <input
               type="email"
               name="email"
@@ -349,12 +413,65 @@
           </div>
           <button type="submit" class="submit-btn">
             Підписатися
-            <svg class="submit-btn__icon" width="24" height="24" area-label="зображення літака">
+            <svg
+              class="submit-btn__icon"
+              width="24"
+              height="24"
+              area-label="зображення літака"
+            >
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
           </button>
         </form>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-toggle-close js-close-menu">
+        <svg width="40" height="40" aria-label="перемикач мобільного меню">
+          <use href="./images/sprite.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <ul>
+        <li class="mobile-menu__nav-item">
+          <a
+            href="./"
+            class="mobile-menu__nav-link mobile-menu__nav-link_active"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="./portfolio.html" class="mobile-menu__nav-link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="./#address-box" class="mobile-menu__nav-link">Контакти</a>
+        </li>
+      </ul>
+      <div>
+        <a href="tel:+380961111111" class="mobile-menu__tel">
+          +38 096 111 11 11</a
+        >
+        <a href="mailto:info@devstudio.com" class="mobile-menu__email">
+          info@devstudio.com</a
+        >
+        <ul class="mobile-networks">
+          <li class="mobile-networks__item">
+            <a href="#" class="mobile-networks__link">Instagram</a>
+          </li>
+          <li class="mobile-networks__item">
+            <a href="#" class="mobile-networks__link"> Twitter</a>
+          </li>
+          <li class="mobile-networks__item">
+            <a href="#" class="mobile-networks__link"> Facebook</a>
+          </li>
+          <li class="mobile-networks__item">
+            <a href="#" class="mobile-networks__link"> LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

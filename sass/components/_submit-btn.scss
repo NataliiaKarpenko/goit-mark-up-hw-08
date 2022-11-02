@@ -1,6 +1,7 @@
 .submit-btn {
   @extend %centered;
-
+  margin-left: auto;
+  margin-right: auto;
   min-width: 200px;
   min-height: 50px;
 
@@ -20,19 +21,18 @@
     background-color: #188ce8;
   }
 
-  @media screen and (max-width: 1199px) {
-    margin-left: auto;
-    margin-right: auto;
+  &__icon {
+    margin-left: 12px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 10px;
+    }
   }
 }
 
-.submit-btn__icon {
-  margin-left: 10px;
-}
-
 .hero__submit-btn {
-  padding-right: 32px;
-  padding-left: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
