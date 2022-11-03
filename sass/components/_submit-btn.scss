@@ -20,13 +20,13 @@
   &:focus {
     background-color: #188ce8;
   }
+}
 
-  &__icon {
-    margin-left: 12px;
+.submit-btn__icon {
+  margin-left: 12px;
 
-    @media screen and (min-width: 1200px) {
-      margin-left: 10px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
   }
 }
 

@@ -8,24 +8,24 @@
       margin-bottom: 9px;
     }
   }
+}
 
-  &__link {
-    @include font(14px, 1.71, 0.03em);
-    font-weight: 400;
+.correspondence__link {
+  @include font(14px, 1.71, 0.03em);
+  font-weight: 400;
 
-    transition: color var(--transition-dur-func);
+  transition: color var(--transition-dur-func);
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
+}
 
-  &__link_light {
-    color: var(--white-bgc);
-  }
+.correspondence__link_light {
+  color: var(--white-bgc);
+}
 
-  &__link_dark {
-    color: rgba(255, 255, 255, 0.6);
-  }
+.correspondence__link_dark {
+  color: rgba(255, 255, 255, 0.6);
 }

@@ -21,8 +21,8 @@
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
 
   background-color: var(--white-bgc);
@@ -32,6 +32,16 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-dur-func);
+
+  @media screen and (max-width: 1199px) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media screen and (min-width: 1200px) {
+      min-width: 528px;
+      min-height: 581px;
+    }
+  }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.2);
@@ -48,6 +58,7 @@
   width: 30px;
   height: 30px;
 
+  line-height: 0;
   background: var(--white-bgc);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -69,8 +80,12 @@
   margin-bottom: 12px;
 
   font-weight: 700;
-  @include font(20px, 1.15, 0.03em);
+  @include font(20px, 1.5, 0.03em);
   color: var(--primary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal__list {
@@ -124,8 +139,8 @@
 }
 
 .modal__input_narrow {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 42px;
   height: 40px;
 }
@@ -136,17 +151,19 @@
   resize: none;
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+    @include font(14px, 1.14, 0.01);
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      @include font(12px, 1.17, 0.01);
+    }
   }
 }
 
 .modal__label {
   margin-bottom: 4px;
 
-  @include font(12px, 1.16, 0.01em);
+  @include font(12px, 1.17, 0.01em);
   color: var(--secondary-text-color);
 }
 
@@ -154,10 +171,14 @@
   @extend %centered;
   margin-bottom: 30px;
 
-  @include font(14px, 1.71, 0.03em);
+  @include font(12px, 1.17, 0.03em);
   color: var(--secondary-text-color);
 
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 1.71, 0.03em);
+  }
 }
 
 .modal__tick {
@@ -165,7 +186,7 @@
 }
 
 .modal__checkbox-icon {
-  margin-right: 7px;
+  margin-right: 8px;
 
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
