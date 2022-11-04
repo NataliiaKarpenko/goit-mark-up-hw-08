@@ -8,6 +8,8 @@
 @import "./base/container";
 
 @import "./components/logo";
+@import "./components/nav";
+@import "./components/contacts-list";
 @import "./components/hero-title";
 @import "./components/submit-btn";
 @import "./components/networks-list";
@@ -22,22 +24,5 @@
 @import "./layout/customers-section";
 @import "./layout/footer";
 @import "./layout/header";
-
-@import "./components/nav";
-//
-@import "./components/contacts-list";
-//
-//
-//
-
-//
-
-//
-//
-//
-//
-//
-//
-@import "./layout/backdrop";
-//
+@import "./layout/backdrop"; 
 @import "./layout/project-section";
