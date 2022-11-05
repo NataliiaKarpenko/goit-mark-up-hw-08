@@ -89,16 +89,12 @@
 
   border: 1px solid var(--border-light-grey);
   border-top: none;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 56px;
-  }
 }
 
 .project__title {
   margin-bottom: 4px;
 
-  @include font(18, 2, 0.06);
+  @include font(18px, 2, 0.06em);
   color: var(--primary-text-color);
 }
 

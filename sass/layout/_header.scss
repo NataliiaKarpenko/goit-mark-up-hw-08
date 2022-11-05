@@ -1,14 +1,14 @@
 .header {
   border-bottom: 1px solid var(--border-light-grey);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-  @media screen and (width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
-  @media screen and (width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 25px;
     padding-bottom: 25px;
   }

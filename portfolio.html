@@ -55,10 +55,10 @@
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="contacts__link"
                 ><svg
-                  class="contacts__icon"
+                  class="contacts__icon contacts__icon_email"
                   width="16"
                   height="12"
-                  area-label="конверт"
+                  aria-label="конверт"
                 >
                   <use href="./images/sprite.svg#icon-envelope"></use>
                 </svg>
@@ -68,10 +68,10 @@
             <li class="contacts__item">
               <a href="tel:+380961111111" class="contacts__link"
                 ><svg
-                  class="contacts__icon"
+                  class="contacts__icon contacts__icon_tel"
                   width="10"
                   height="16"
-                  area-label="телефон"
+                  aria-label="телефон"
                 >
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
@@ -84,7 +84,7 @@
 
       <!-- Mobile menu -->
 
-      <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu js-menu-container">
         <button class="menu-toggle mobile-menu__close js-close-menu">
           <svg width="40" height="40" aria-label="перемикач мобільного меню">
             <use href="./images/sprite.svg#icon-close"></use>
@@ -202,7 +202,7 @@
                         ./images/projects/project-1-mobile.jpg    1x,
                         ./images/projects/project-1-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/project-1-mobile.jpg"
@@ -244,7 +244,7 @@
                         ./images/projects/project-2-mobile.jpg    1x,
                         ./images/projects/project-2-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/project-2-mobile.jpg"
@@ -288,7 +288,7 @@
                         ./images/projects/project-3-mobile.jpg    1x,
                         ./images/projects/project-3-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/project-3-mobile.jpg"
@@ -332,7 +332,7 @@
                         ./images/projects/project-4-mobile.jpg    1x,
                         ./images/projects/project-4-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
 
                     <img
@@ -377,7 +377,7 @@
                         ./images/projects/project-5-mobile.jpg    1x,
                         ./images/projects/project-5-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/project-5-mobile.jpg"
@@ -421,7 +421,7 @@
                         ./images/projects/project-6-mobile.jpg    1x,
                         ./images/projects/project-6-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/project-6-mobile.jpg"
@@ -465,7 +465,7 @@
                         ./images/projects/project-7-mobile.jpg    1x,
                         ./images/projects/project-7-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/project-7-mobile.jpg"
@@ -509,7 +509,7 @@
                         ./images/projects/project-8-mobile.jpg    1x,
                         ./images/projects/project-8-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/project-8-mobile.jpg"
@@ -553,7 +553,7 @@
                         ./images/projects/project-9-mobile.jpg    1x,
                         ./images/projects/project-9-mobile@2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 767px)"
                     />
                     <img
                       src="./images/projects/project-9-mobile.jpg"
@@ -620,7 +620,7 @@
                     width="20"
                     height="20"
                     lang="en"
-                    area-label="instagram"
+                    aria-label="instagram"
                   >
                     <use href="./images/sprite.svg#icon-instagram-2"></use>
                   </svg>
@@ -633,7 +633,7 @@
                     width="20"
                     height="20"
                     lang="en"
-                    area-label="twitter"
+                    aria-label="twitter"
                   >
                     <use href="./images/sprite.svg#icon-twitter-1"></use>
                   </svg>
@@ -646,7 +646,7 @@
                     width="20"
                     height="20"
                     lang="en"
-                    area-label="facebook"
+                    aria-label="facebook"
                   >
                     <use href="./images/sprite.svg#icon-facebook-1"></use>
                   </svg>
@@ -659,7 +659,7 @@
                     width="20"
                     height="20"
                     lang="en"
-                    area-label="linkedin"
+                    aria-label="linkedin"
                   >
                     <use href="./images/sprite.svg#icon-linkedin-1"></use>
                   </svg>
@@ -690,7 +690,7 @@
               class="submit-btn__icon"
               width="24"
               height="24"
-              area-label="зображення літака"
+              aria-label="зображення літака"
             >
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>

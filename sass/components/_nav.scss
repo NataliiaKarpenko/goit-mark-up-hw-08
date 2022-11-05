@@ -25,7 +25,7 @@
 
   &::after {
     position: absolute;
-    bottom: -28px;
+    bottom: -33px;
     left: 0;
 
     width: 100%;
@@ -34,9 +34,5 @@
 
     background-color: var(--accent-color);
     border-radius: 2px;
-
-    @media screen and (min-width: 1200px) {
-      bottom: -25px;
-    }
   }
 }

@@ -53,10 +53,10 @@
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="contacts__link"
                 ><svg
-                  class="contacts__icon"
-                  width="16"
-                  height="12"
-                  area-label="конверт"
+                  class="contacts__icon contacts__icon_email"
+                  width="14"
+                  height="10"
+                  aria-label="конверт"
                 >
                   <use href="./images/sprite.svg#icon-envelope"></use>
                 </svg>
@@ -66,10 +66,10 @@
             <li class="contacts__item">
               <a href="tel:+380961111111" class="contacts__link"
                 ><svg
-                  class="contacts__icon"
+                  class="contacts__icon contacts__icon_tel"
                   width="10"
-                  height="16"
-                  area-label="телефон"
+                  height="14"
+                  aria-label="телефон"
                 >
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
@@ -82,7 +82,7 @@
 
       <!-- Mobile menu -->
 
-      <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu js-menu-container">
         <button class="menu-toggle mobile-menu__close js-close-menu">
           <svg width="40" height="40" aria-label="перемикач мобільного меню">
             <use href="./images/sprite.svg#icon-close"></use>
@@ -155,7 +155,7 @@
           <ul class="benefits">
             <li class="benefits__item">
               <div class="benefits__box">
-                <svg width="70" height="70" area-label="антена">
+                <svg width="70" height="70" aria-label="антена">
                   <use href="./images/sprite.svg#icon-antenna-1"></use>
                 </svg>
               </div>
@@ -167,7 +167,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__box">
-                <svg width="70" height="70" area-label="годинник">
+                <svg width="70" height="70" aria-label="годинник">
                   <use href="./images/sprite.svg#icon-clock-1"></use>
                 </svg>
               </div>
@@ -179,7 +179,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__box">
-                <svg width="70" height="70" area-label="діаграма">
+                <svg width="70" height="70" aria-label="діаграма">
                   <use href="./images/sprite.svg#icon-diagram-1"></use>
                 </svg>
               </div>
@@ -190,7 +190,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__box">
-                <svg width="70" height="70" area-label="астронавт">
+                <svg width="70" height="70" aria-label="астронавт">
                   <use href="./images/sprite.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
@@ -266,7 +266,7 @@
                     ./images/team/photo-1-mobile.jpg    1x,
                     ./images/team/photo-1-mobile@2x.jpg 2x
                   "
-                  media="(min-width: 480px)"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/team/photo-1-mobile.jpg"
@@ -285,7 +285,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="instagram"
+                        aria-label="instagram"
                       >
                         <use href="./images/sprite.svg#icon-instagram-2"></use>
                       </svg>
@@ -298,7 +298,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="twitter"
+                        aria-label="twitter"
                       >
                         <use href="./images/sprite.svg#icon-twitter-1"></use>
                       </svg>
@@ -311,7 +311,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="facebook"
+                        aria-label="facebook"
                       >
                         <use href="./images/sprite.svg#icon-facebook-1"></use>
                       </svg>
@@ -324,7 +324,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="linkedin"
+                        aria-label="linkedin"
                       >
                         <use href="./images/sprite.svg#icon-linkedin-1"></use>
                       </svg>
@@ -354,7 +354,7 @@
                     ./images/team/photo-2-mobile.jpg    1x,
                     ./images/team/photo-2-mobile@2x.jpg 2x
                   "
-                  media="(min-width: 480px)"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/team/photo-2-mobile.jpg"
@@ -372,7 +372,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="instagram"
+                        aria-label="instagram"
                       >
                         <use href="./images/sprite.svg#icon-instagram-2"></use>
                       </svg>
@@ -385,7 +385,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="twitter"
+                        aria-label="twitter"
                       >
                         <use href="./images/sprite.svg#icon-twitter-1"></use>
                       </svg>
@@ -398,7 +398,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="facebook"
+                        aria-label="facebook"
                       >
                         <use href="./images/sprite.svg#icon-facebook-1"></use>
                       </svg>
@@ -411,7 +411,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="linkedin"
+                        aria-label="linkedin"
                       >
                         <use href="./images/sprite.svg#icon-linkedin-1"></use>
                       </svg>
@@ -441,7 +441,7 @@
                     ./images/team/photo-3-mobile.jpg    1x,
                     ./images/team/photo-3-mobile@2x.jpg 2x
                   "
-                  media="(min-width: 480px)"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/team/photo-3-mobile.jpg"
@@ -459,7 +459,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="instagram"
+                        aria-label="instagram"
                       >
                         <use href="./images/sprite.svg#icon-instagram-2"></use>
                       </svg>
@@ -472,7 +472,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="twitter"
+                        aria-label="twitter"
                       >
                         <use href="./images/sprite.svg#icon-twitter-1"></use>
                       </svg>
@@ -485,7 +485,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="facebook"
+                        aria-label="facebook"
                       >
                         <use href="./images/sprite.svg#icon-facebook-1"></use>
                       </svg>
@@ -498,7 +498,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="linkedin"
+                        aria-label="linkedin"
                       >
                         <use href="./images/sprite.svg#icon-linkedin-1"></use>
                       </svg>
@@ -528,7 +528,7 @@
                     ./images/team/photo-4-mobile.jpg    1x,
                     ./images/team/photo-4-mobile@2x.jpg 2x
                   "
-                  media="(min-width: 480px)"
+                  media="(max-width: 767px)"
                 />
                 <img
                   src="./images/team/photo-4-mobile.jpg"
@@ -546,7 +546,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="instagram"
+                        aria-label="instagram"
                       >
                         <use href="./images/sprite.svg#icon-instagram-2"></use>
                       </svg>
@@ -559,7 +559,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="twitter"
+                        aria-label="twitter"
                       >
                         <use href="./images/sprite.svg#icon-twitter-1"></use>
                       </svg>
@@ -572,7 +572,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="facebook"
+                        aria-label="facebook"
                       >
                         <use href="./images/sprite.svg#icon-facebook-1"></use>
                       </svg>
@@ -585,7 +585,7 @@
                         width="20"
                         height="20"
                         lang="en"
-                        area-label="linkedin"
+                        aria-label="linkedin"
                       >
                         <use href="./images/sprite.svg#icon-linkedin-1"></use>
                       </svg>
@@ -609,7 +609,7 @@
                   class="customers-logo__icon"
                   width="106"
                   height="60"
-                  area-label="логотип компанії"
+                  aria-label="логотип компанії"
                 >
                   <use href="./images/sprite.svg#icon-group"></use>
                 </svg>
@@ -621,7 +621,7 @@
                   class="customers-logo__icon"
                   width="106"
                   height="60"
-                  area-label="логотип компанії"
+                  aria-label="логотип компанії"
                 >
                   <use href="./images/sprite.svg#icon-group-1"></use>
                 </svg>
@@ -633,7 +633,7 @@
                   class="customers-logo__icon"
                   width="106"
                   height="60"
-                  area-label="логотип компанії"
+                  aria-label="логотип компанії"
                 >
                   <use href="./images/sprite.svg#icon-group-2"></use>
                 </svg>
@@ -645,7 +645,7 @@
                   class="customers-logo__icon"
                   width="106"
                   height="60"
-                  area-label="логотип компанії"
+                  aria-label="логотип компанії"
                 >
                   <use href="./images/sprite.svg#icon-group-3"></use>
                 </svg>
@@ -657,7 +657,7 @@
                   class="customers-logo__icon"
                   width="106"
                   height="60"
-                  area-label="логотип компанії"
+                  aria-label="логотип компанії"
                 >
                   <use href="./images/sprite.svg#icon-group-4"></use>
                 </svg>
@@ -670,7 +670,7 @@
                   class="customers-logo__icon"
                   width="106"
                   height="60"
-                  area-label="логотип компанії"
+                  aria-label="логотип компанії"
                 >
                   <use href="./images/sprite.svg#icon-group-5"></use>
                 </svg>
@@ -724,7 +724,7 @@
                     width="20"
                     height="20"
                     lang="en"
-                    area-label="instagram"
+                    aria-label="instagram"
                   >
                     <use href="./images/sprite.svg#icon-instagram-2"></use>
                   </svg>
@@ -737,7 +737,7 @@
                     width="20"
                     height="20"
                     lang="en"
-                    area-label="twitter"
+                    aria-label="twitter"
                   >
                     <use href="./images/sprite.svg#icon-twitter-1"></use>
                   </svg>
@@ -750,7 +750,7 @@
                     width="20"
                     height="20"
                     lang="en"
-                    area-label="facebook"
+                    aria-label="facebook"
                   >
                     <use href="./images/sprite.svg#icon-facebook-1"></use>
                   </svg>
@@ -763,7 +763,7 @@
                     width="20"
                     height="20"
                     lang="en"
-                    area-label="linkedin"
+                    aria-label="linkedin"
                   >
                     <use href="./images/sprite.svg#icon-linkedin-1"></use>
                   </svg>
@@ -794,7 +794,7 @@
               class="submit-btn__icon"
               width="24"
               height="24"
-              area-label="зображення літака"
+              aria-label="зображення літака"
             >
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
@@ -812,7 +812,7 @@
             class="modal__close-icon"
             width="18"
             height="18"
-            area-label="хрестик"
+            aria-label="хрестик"
           >
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
@@ -839,7 +839,7 @@
                   class="modal__icon"
                   width="18"
                   height="18"
-                  area-label="зображення людини"
+                  aria-label="зображення людини"
                 >
                   <use href="./images/sprite.svg#icon-person"></use>
                 </svg>
@@ -860,7 +860,7 @@
                   class="modal__icon"
                   width="18"
                   height="18"
-                  area-label="зображення людини"
+                  aria-label="зображення людини"
                 >
                   <use href="./images/sprite.svg#icon-phone-black"></use>
                 </svg>
@@ -881,7 +881,7 @@
                   class="modal__icon"
                   width="18"
                   height="18"
-                  area-label="зображення конверта"
+                  aria-label="зображення конверта"
                 >
                   <use href="./images/sprite.svg#icon-email-black"></use>
                 </svg>
@@ -909,18 +909,20 @@
               class="modal__checkbox-icon"
               width="16"
               height="15"
-              area-label="зображення галочки"
+              aria-label="зображення галочки"
             >
               <use
                 class="modal__tick"
                 href="./images/sprite.svg#icon-check"
               ></use>
             </svg>
-            Погоджуюся з розсилкою та приймаю &nbsp<a
-              href="#"
-              class="modal__agreement"
-              >Умови договору
-            </a>
+            <span
+              >Погоджуюся з розсилкою та приймаю &nbsp;<a
+                href="#"
+                class="modal__agreement"
+                >Умови договору
+              </a>
+            </span>
           </label>
           <div class="submit-btn-box">
             <button type="submit" class="submit-btn">Відправити</button>
