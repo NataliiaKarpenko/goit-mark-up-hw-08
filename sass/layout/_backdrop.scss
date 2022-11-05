@@ -169,11 +169,11 @@
   resize: none;
 
   &::placeholder {
-    @include font(14px, 1.14, 0.01);
+    @include font(14px, 1.14, 0.01em);
     color: rgba(117, 117, 117, 0.5);
 
     @media screen and (min-width: 1200px) {
-      @include font(12px, 1.17, 0.01);
+      @include font(12px, 1.17, 0.01em);
     }
   }
 }

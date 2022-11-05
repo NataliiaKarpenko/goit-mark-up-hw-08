@@ -29,7 +29,7 @@
 
   .mobile-menu__nav-link {
     font-weight: 500;
-    @include font(40px, 1.18, 0.02);
+    @include font(40px, 1.18, 0.02em);
 
     color: var(--primary-text-color);
 
@@ -42,7 +42,7 @@
     margin-bottom: 32px;
     display: block;
     font-weight: 500;
-    @include font(34px, 1.18, 0.02);
+    @include font(34px, 1.18, 0.02em);
 
     color: var(--accent-color);
   }
@@ -52,7 +52,7 @@
     display: block;
 
     font-weight: 500;
-    @include font(24px, 1.17, 0.02);
+    @include font(24px, 1.17, 0.02em);
 
     color: var(--secondary-text-color);
   }
@@ -81,7 +81,7 @@
 
   .mobile-networks__link {
     font-weight: 500;
-    @include font(18px, 1.22px, 0.02);
+    @include font(18px, 1.22, 0.02em);
 
     color: var(--accent-color);
   }
